@@ -1,3 +1,5 @@
+import './less/style.less';
+
 console.log('hello, dudde!');
 const fn = () => {
   const objA = { a: 1 };
@@ -7,3 +9,4 @@ const fn = () => {
 };
 
 fn();
+console.log('hello');
