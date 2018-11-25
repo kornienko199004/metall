@@ -11,16 +11,18 @@
         <div class="work-hours">Работаем ежедневно</div>
       </div>
       <div class="page-header__wrapper page-header__wrapper--middle">
-        <a class="logo" href="#">
-          <span class="visually-hidden">Прием металла СПб</span>
-        </a>
+        <div class="page-header__logo-wrapper">
+          <a class="logo" href="#">
+            Прием металла СПб
+          </a>
+        </div>
         <div class="phone">
-          <p class="phone__number">+7(911)829-77-50</p>
+          <p class="phone__number">+7(911) 829-77-50</p>
           <a href="#">Обратный звонок</a>
         </div>
-        <div class="user__nav">
-          <button class="button" type="button">Заказать вывоз</button>
-          <button class="button" type="button">Оценка по фото</button>
+        <div class="user-nav">
+          <button class="user-nav__button button" type="button">Заказать вывоз</button>
+          <button class="user-nav__button button" type="button">Оценка по фото</button>
         </div>
       </div>
       <div class="page-header__wrapper page-header__wrapper--bottom">
@@ -37,9 +39,10 @@
       </div>
     </header>
     <main class="page-container">
-      <h1 class="title">Прием металлолома в Санкт-Петербурге</h1>
+      <h1 class="visually-hidden">Прием металлолома в Санкт-Петербурге</h1>
       <section class="information">
         <h2 class="information-title">Прием металлолома</h2>
+        <span class="information-town">В Санкт-Петербурге</span>
         <p class="information-contant">Вывоз, демонтаж, круглосуточно</p>
         <div class="information-nav">
           <button class="information-button button" type="button">Срочный вывоз лома</button>
@@ -47,8 +50,8 @@
         </div>
       </section>
       <section class="features">
-        <h2 class="features-title">Ленвтормет - принимаем металлолом с 2005 года</h2>
-        <p class="features-contant">Компания Ленвтормет принимает металлолом с вывозом и бесплатной погрузкой
+        <h2 class="features__title">Ленвтормет - принимаем металлолом с 2005 года</h2>
+        <p class="features__contant">Компания Ленвтормет принимает металлолом с вывозом и бесплатной погрузкой
           нашими грузчиками, а также профессиональным демонтажом, если он необходим.
           Собственный автопарк c автотранспортом различной грузоподъемности оборудован
           весами для точного взвешивания лома. Квалифицированные приемщики, рабочие и
@@ -61,20 +64,20 @@
           <b>Прием и демонтаж лома</b> осуществляется по всему Санкт-Петербургу, без привязки к району.
         </p>
         <ul class="features__list">
-          <li class="features__item">
-            <h3 class="feature__title">Честный вес</h3>
+          <li class="features__item feature">
+            <h3 class="feature__title feature__title--small">Честный вес</h3>
             <p class="feature__about">Точные весы во всех машинах</p>
           </li>
           <li class="features__item">
-            <h3 class="feature__title">Работаем 24 часа</h3>
+            <h3 class="feature__title feature__title--small">Работаем 24 часа</h3>
             <p class="feature__about">Приедем забрать лом от 30 мин.</p>
           </li>
           <li class="features__item">
-            <h3 class="feature__title">Погрузка бесплатно</h3>
+            <h3 class="feature__title feature__title--small">Погрузка бесплатно</h3>
             <p class="feature__about">Свои грузчики</p>
           </li>
           <li class="features__item">
-            <h3 class="feature__title">Высокие цены</h3>
+            <h3 class="feature__title feature__title--small">Высокие цены</h3>
             <p class="feature__about">Деньги сразу!</p>
           </li>
         </ul>
@@ -184,7 +187,7 @@
         <button class="button price__button" type="button">Цены на лом</button>
       </section>
       <section class="conditions">
-        <h2>Условия приема металлолома</h2>
+        <h2 class="conditions__title">Условия приема металлолома</h2>
         <ul class="conditions__list">
           <li class="conditions__item condition">
             <section class="condition__card">
@@ -215,7 +218,7 @@
       <section class="estimating">
         <h2 class="estimating__title">Оценка лома по фото</h2>
         <p class="estimating__caption">загрузите фото для оценки</p>
-        <form action="" class="estimating__form">
+        <form class="estimating__form">
           <input type="text" class="estimating__input estimating__input--photo" placeholder="Выберете фото">
           <input type="text" class="estimating__input estimating__input--phone" placeholder="Ваш телефон">
           <button class="estimating__button button" type="submit">Отправить</button>

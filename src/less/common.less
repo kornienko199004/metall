@@ -1,15 +1,48 @@
+body {
+  .null-indents();
+  font-family: @main-font;
+  background-color: @body-background-color;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  .null-indents();
+}
+
+.visually-hidden,
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+}
+
 .button {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   color: #FFFFFF;
-  background-color: #FF5753;
+  background-color: @button-color;
   padding: 12px 0px 12px 0px;
   border: 0;
+  border-radius: 3px;
 }
 
-h1 {
-  color: "red";
+.title {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 

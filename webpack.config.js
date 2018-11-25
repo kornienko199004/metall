@@ -21,7 +21,7 @@ const conf = {
       {
         test: /\.less$/,
         use: [{
-          loader: MiniCssExtractPlugin.loader,
+          loader: 'style-loader',
         },
 
         {

@@ -1,0 +1,17 @@
+.null-indents() {
+  margin: 0;
+  padding: 0;
+}
+
+.null-indents-list() {
+  list-style: none;
+  .null-indents();
+}
+
+.common-title() {
+  .null-indents();  
+  font-weight: normal;
+  font-size: 30px;
+  color: @dark-title-color;
+  text-transform: uppercase;
+}
