@@ -2,7 +2,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 const conf = {
-  entry: './src/index.js',
+  entry: [
+    './src/index.js',
+    'webpack-dev-server/client?http://0.0.0.0:8080',
+  ],
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'main.js',
@@ -48,6 +51,16 @@ const conf = {
             options: {
                 name: '[name].[ext]',
                 outputPath: 'fonts/'
+            }
+        }]
+      },
+      {
+        test: /\.(jpg|png|svg)$/,
+        use: [{
+            loader: 'file-loader',
+            options: {
+                name: '[name].[ext]',
+                outputPath: 'img/'
             }
         }]
       }
