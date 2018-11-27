@@ -4,9 +4,26 @@
   font-family: @additional-font;
   font-weight: 700;
   font-size: 24px;
+  margin-bottom: 15px;
 }
 
 .feature__about {
   .null-indents();
   font-family: @additional-font;
+  font-size: 24px;
+}
+
+.feature {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.feature__wrapper--image {
+  margin-right: 50px;
+  & svg {
+    width: 100px;
+    fill: @dark-color;
+  }
 }

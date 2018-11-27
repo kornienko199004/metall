@@ -46,14 +46,15 @@ const conf = {
       },
       {
         test: /\.svg$/,
-        loader: 'svg-sprite-loader',
-        options: {
-          extract: true,
-          spriteFilename: 'img/sprite.svg', // this is the destination of your sprite sheet
-        }
+        use: [
+          {
+            loader: 'svg-sprite-loader',
+          },
+          'svgo-loader'
+        ]
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [{
             loader: 'file-loader',
             options: {
@@ -63,7 +64,7 @@ const conf = {
         }]
       },
       {
-        test: /\.(jpg|png|svg)$/,
+        test: /\.(jpg|png)$/,
         use: [{
             loader: 'file-loader',
             options: {
