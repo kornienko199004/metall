@@ -1,0 +1,28 @@
+.condition-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.condition-card__title {
+  width: 100%;
+  .null-indents();
+  font-family: @additional-font;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.condition-card__caption {
+  .null-indents();
+  font-family: @additional-font;
+  font-size: 24px;
+}
+
+.condition-card__image {
+  & svg {
+    width: 100px;
+    fill: @dark-color;
+  }
+}

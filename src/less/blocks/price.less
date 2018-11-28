@@ -1,16 +1,31 @@
 .price {
+  display: flex;
+  flex-wrap: wrap;
   .common-padding();
-  background-color: #293449;
+  background-color: @dark-color;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .price__title {
-  .common-title();
+  .common-title(@yellow-color, @yellow-color, @dark-color);
 }
 
 .price__caption {
   font-family: @additional-font;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-size: 20px;
   text-align: justify;
+  color: @yellow-color;
+}
+
+.price__button {
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 150px;
+  background-color: transparent;
+  border: 1px solid @yellow-color;
   color: @yellow-color;
 }

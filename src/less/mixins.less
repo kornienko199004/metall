@@ -8,11 +8,11 @@
   .null-indents();
 }
 
-.common-title() {
+.common-title(@_title_color: @dark-title-color, @_line_color: @bright-dark-color, @_gradient_color: #FFFFFF) {
   .null-indents();  
   font-weight: normal;
   font-size: 30px;
-  color: @dark-title-color;
+  color: @_title_color;
   text-transform: uppercase;
   margin-bottom: 20px;
   position: relative;
@@ -23,8 +23,7 @@
     left: 0;
     width: 300px;
     height: 2px;
-    background-color: @bright-dark-color;
-    border-radius: 50%;
+    background-image: linear-gradient(to right, @_gradient_color, @_line_color, @_gradient_color);
   }
 }
 
