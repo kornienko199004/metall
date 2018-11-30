@@ -1,5 +1,6 @@
 export default () => {
   const menu = document.querySelector('.main-nav');
+  const information = document.querySelector('.information');
 
   if (menu.classList.contains('main-nav--no-js')) {
     menu.classList.remove('main-nav--no-js');
@@ -18,6 +19,11 @@ export default () => {
     } else if (menu.classList.contains('main-nav--opened')) {
       menu.classList.remove('main-nav--opened');
       menu.classList.add('main-nav--closed');
+    }
+    if (information.classList.contains('show-menu')) {
+      information.classList.remove('show-menu');
+    } else {
+      information.classList.add('show-menu');
     }
   });
 };

@@ -1,13 +1,12 @@
-.main-nav {
-  overflow: hidden;
+.main-nav__toggle-wrapper {
+  position: relative;
+  z-index: 2;
 }
 
 .main-nav__list {
   .null-indents-list();
   position: relative;
-  margin-top: -230px;
-  transition-property: margin-top;
-  transition-duration: 2s;
+  z-index: -2;
 }
 
 .main-nav__item {
@@ -65,30 +64,15 @@
 }
 
 .main-nav--closed {
-  margin-bottom: -50px;
-  position: relative;
-  z-index: 10;
 
   & .main-nav__toggle-image--close {
     display: none;
   }
-
-  & .main-nav__list {
-    //position: relative;
-    z-index: -10;
-  }
 }
 
 .main-nav--opened {
-  position: relative;
-  z-index: 10;
   & .main-nav__toggle-image--open {
     display: none;
-  }
-
-  & .main-nav__list {
-    //position: relative;
-    margin-top: 0;
   }
 
   .main-nav__toggle {
