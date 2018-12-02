@@ -12,6 +12,7 @@ import goodMoney from '../img/goodMoney.svg';
 import creditCard from '../img/creditCard.svg';
 import iconMenuBurger from '../img/iconMenuBurger.svg';
 import iconMenuCross from '../img/iconMenuCross.svg';
+import clock from '../img/clock.svg';
 
 console.log('hello, dudde!');
 const fn = () => {

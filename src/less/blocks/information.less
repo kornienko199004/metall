@@ -11,10 +11,10 @@
   color: #FFFFFF;
   padding-top: 50px;
   padding-left: 30px;
+  padding-right: 30px;
   position: relative;
   margin-bottom: 50px;
   transition: all .5s linear;
-  //z-index: 1;
 }
 
 .information.show-menu {
@@ -49,13 +49,15 @@
   min-width: 340px;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .information-button {
+  .button(#FFFFFF, @dark-color);
   padding-left: 10px;
   padding-right: 10px;
-  min-width: 160px;
-  background-color: transparent;
-  border: 1px solid #FFFFFF;
+  //min-width: 150px;
   font-size: 15px;
+  color: #FFFFFF;
+  box-sizing: border-box;
 }
