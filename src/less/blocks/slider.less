@@ -1,12 +1,22 @@
 .slider__list {
   .null-indents-list();
   margin: 0 auto;
-  height: 1060px;
-  overflow: hidden;
-  & .slider__item {
-    //height: 00px;
-  }
-  & .slider__item:nth-child(1) {
-    //display: none;
-  }
+  position: relative;
+}
+
+.slider__navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.slider__item {  
+  transition: all .5s;
+}
+
+.slider__item--hidden {
+  position: absolute;
+  top: 0;
+  left: -5000px;
+  opacity: 0;
 }

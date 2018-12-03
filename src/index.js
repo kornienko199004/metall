@@ -1,5 +1,6 @@
 import './less/style.less';
 import menuScript from './js/menu';
+import sliderScript from './js/slider';
 import like from '../img/like.svg';
 import weight from '../img/weight.svg';
 import truck from '../img/truck.svg';
@@ -25,3 +26,4 @@ const fn = () => {
 fn();
 console.log('hello');
 menuScript();
+sliderScript();
