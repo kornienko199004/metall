@@ -39,8 +39,8 @@
           </a>
         </div>
         <div class="user-nav">
-          <button class="user-nav__button button" type="button">Заказать вывоз</button>
-          <button class="user-nav__button button" type="button">Оценка по фото</button>
+          <button class="user-nav__button button demontag-button" type="button">Заказать демонтаж</button>
+          <a href="#photo-form" class="user-nav__button button" type="button">Оценка по фото</a>
         </div>
       </div>
       <div class="page-header__wrapper page-header__wrapper--bottom">
@@ -75,7 +75,7 @@
         <p class="information-contant">Вывоз, демонтаж, круглосуточно</p>
         <div class="information-nav">
           <button class="information-button button" type="button"><span>Срочный вывоз лома</span></button>
-          <button class="information-button button" type="button">Оценка по фото</button>
+          <a href="#photo-form" class="information-button button" type="button">Оценка по фото</a>
         </div>
       </section>
       <section class="features">
@@ -296,7 +296,7 @@
           </li>
         </ul>
       </section>
-      <section class="estimating">
+      <section class="estimating" id="photo-form">
         <h2 class="estimating__title">Оценка лома по фото</h2>
         <p class="estimating__caption">загрузите фото для оценки</p>
         <form class="estimating__form">
@@ -342,6 +342,20 @@
         </ul>
       </div>
     </footer>
+    <section class="modal">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Обратный звонок</h2>
+        <button class="modal__close">
+          <span class="visually-hidden">Закрыть</span>
+          <svg><use xlink:href="#iconMenuCross"></use></svg>
+        </button>
+        <p class="modal__caption">Оставьте номер и мы Вам перезвоним</p>
+        <form class="modal__form">
+          <input type="text" class="modal__input modal__input--phone" name="user-phone" placeholder="+7 (999) 999-99-99">
+          <button class="modal__button button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
     <script src="dist/main.js"></script>
   </body>
 </html>

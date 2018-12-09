@@ -1,6 +1,8 @@
 import './less/style.less';
 import menuScript from './js/menu';
 import sliderScript from './js/slider';
+import modalScript from './js/modal';
+import anchorsScript from './js/anchors';
 import like from '../img/like.svg';
 import weight from '../img/weight.svg';
 import truck from '../img/truck.svg';
@@ -27,3 +29,5 @@ fn();
 console.log('hello');
 menuScript();
 sliderScript();
+modalScript();
+anchorsScript();

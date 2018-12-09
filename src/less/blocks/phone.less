@@ -20,7 +20,9 @@
   display: flex;
   justify-content: center;
   color: #000000;
-  &:hover{
+  &:hover,
+  &:active,
+  &:focus {
   @color: #ddd;
   text-shadow: 1px 1px 0px @color, 2px 2px 0px @color, 3px 3px 0px @color;
   border-color: darkmagenta;
@@ -70,7 +72,9 @@
   & span:nth-child(14){
     transition-delay: 0.65s;
   }
-  &:hover{
+  &:hover,
+  &:active,
+  &:focus {
     span{
       font-weight: 700;
     }
