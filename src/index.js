@@ -3,6 +3,7 @@ import menuScript from './js/menu';
 import sliderScript from './js/slider';
 import modalScript from './js/modal';
 import anchorsScript from './js/anchors';
+import scrollToTopScript from './js/scrollToTop';
 import like from '../img/like.svg';
 import weight from '../img/weight.svg';
 import truck from '../img/truck.svg';
@@ -16,6 +17,7 @@ import creditCard from '../img/creditCard.svg';
 import iconMenuBurger from '../img/iconMenuBurger.svg';
 import iconMenuCross from '../img/iconMenuCross.svg';
 import clock from '../img/clock.svg';
+import cursor from '../img/cursor.svg';
 
 console.log('hello, dudde!');
 const fn = () => {
@@ -31,3 +33,4 @@ menuScript();
 sliderScript();
 modalScript();
 anchorsScript();
+scrollToTopScript();

@@ -51,3 +51,23 @@ img {
   height: auto;
 }
 
+#toTop {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 87, 83, 0.8);
+  .null-indents();
+  & svg {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: @dark-button-color;
+  }
+}
