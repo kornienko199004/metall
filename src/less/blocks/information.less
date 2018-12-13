@@ -15,6 +15,20 @@
   position: relative;
   margin-bottom: 50px;
   transition: all .5s linear;
+
+  @media (min-width: @table-width) {
+    background-size: 1200px auto;
+    background-position: 40% 80%;
+    height: 580px;
+    padding-top: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 1800px auto;
+    height: 780px;
+  }
 }
 
 .information.show-menu {
@@ -28,13 +42,17 @@
   .null-indents();
   text-transform: uppercase;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .information-town {
   font-size: 20px;
   width: 100%;
   padding-bottom: 20px;
+
+  @media (min-width: @table-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .information-contant {
@@ -50,6 +68,12 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+
+  @media (min-width: @table-width) {
+    width: 50%;
+    min-width: 400px;
+    margin: 0;
+  }
 }
 
 .information-button {

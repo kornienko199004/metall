@@ -6,8 +6,10 @@
 
 .slider__navigation {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
   margin-bottom: 20px;
+  width: 400px;
 }
 
 .slider__item {  
@@ -19,4 +21,17 @@
   top: 0;
   left: -5000px;
   opacity: 0;
+}
+
+.slider__button {
+  .button(@dark-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+  width: 190px;
+}
+
+.slider__button--checked {
+  color: #FFFFFF;
+  background-color: @dark-color;
 }

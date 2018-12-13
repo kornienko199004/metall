@@ -11,7 +11,13 @@ export default () => {
   });
 
   slidersButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
+/* eslint-disable */
+    button.addEventListener('click', function () {
+      const checked = document.querySelector('.slider__button--checked');
+      if (checked) {
+        checked.classList.remove('slider__button--checked');
+      }
+      this.classList.add('slider__button--checked');
       slidersItems.forEach((sliderItem) => {
         sliderItem.classList.remove('slider__item--hidden');
       });
@@ -19,4 +25,5 @@ export default () => {
       slider[0].classList.add('slider__item--hidden');
     });
   });
+/* eslint-enable */
 };
