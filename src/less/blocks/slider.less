@@ -2,6 +2,7 @@
   .null-indents-list();
   margin: 0 auto;
   position: relative;
+  box-sizing: border-box;
 }
 
 .slider__navigation {
@@ -9,7 +10,8 @@
   justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 400px;
+  width: @min-width;
+  box-sizing: border-box;
 }
 
 .slider__item {  
@@ -28,7 +30,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
-  width: 190px;
+  width: 45%;
+  box-sizing: border-box;
 }
 
 .slider__button--checked {

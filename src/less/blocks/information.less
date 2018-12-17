@@ -15,14 +15,15 @@
   position: relative;
   margin-bottom: 50px;
   transition: all .5s linear;
+  min-width: @min-width;
 
   @media (min-width: @table-width) {
     background-size: 1200px auto;
     background-position: 40% 80%;
     height: 580px;
-    padding-top: 120px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 140px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,6 +44,10 @@
   text-transform: uppercase;
   width: 100%;
   margin-bottom: 10px;
+
+  @media (min-width: @table-width) {
+    font-size: 60px;
+  }
 }
 
 .information-town {
@@ -52,6 +57,7 @@
 
   @media (min-width: @table-width) {
     padding-bottom: 50px;
+    font-size: 30px;
   }
 }
 
@@ -60,6 +66,10 @@
   font-family: @additional-font;
   width: 100%;
   margin-bottom: 40px;
+
+  @media (min-width: @table-width) {
+    font-size: 20px;
+  }
 }
 
 .information-nav {
@@ -80,7 +90,6 @@
   .button(#FFFFFF, @dark-color);
   padding-left: 10px;
   padding-right: 10px;
-  //min-width: 150px;
   font-size: 15px;
   color: #FFFFFF;
   box-sizing: border-box;

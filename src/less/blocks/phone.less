@@ -1,7 +1,3 @@
-.phone {
-  text-align: center;
-}
-
 .phone__number {
   width: 100%;
   text-transform: uppercase;
@@ -10,12 +6,16 @@
   text-decoration: none;
   color: @button-color;
   padding: 7px 0 5px 0;
-  width: 270px;
+  text-align: center;
   padding: 9px 0px;
-  margin-bottom: 20px;
+
+  @media (min-width: @table-width) {
+    font-size: 35px;
+  }
 }
 
 .phone__link {
+  width: 100%;
   text-decoration: none;
   display: flex;
   justify-content: center;

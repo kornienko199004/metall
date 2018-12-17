@@ -5,7 +5,8 @@ export default () => {
   $(() => {
     $("a[href^='#']").click(function() {
       const href = $(this).attr("href");
-      $('html, body').animate({ scrollTop: $(href).offset().top + 'px'}, 1000);
+      const scrollValue = $(href).offset().top - 140;
+      $('html, body').animate({ scrollTop: scrollValue + 'px'}, 1000);
       return false;
     });
   });

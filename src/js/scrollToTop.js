@@ -12,7 +12,7 @@ export default () => {
       }
     });
     $('#toTop').click(() => {
-      $('body,html').animate({scrollTop:0},800);
+      $('body,html').animate({scrollTop: 0},800);
     });
   });
 /* eslint-enable */
