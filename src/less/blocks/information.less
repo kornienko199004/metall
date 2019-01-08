@@ -29,6 +29,10 @@
   @media (min-width: @desktop-width) {
     background-size: 1800px auto;
     height: 780px;
+    padding-top: 250px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 0;
   }
 }
 
@@ -36,7 +40,7 @@
   margin-top: 0;
 }
 
-.information-title {
+.information__title {
   font-size: 50px;
   font-weight: normal;
   line-height: 70px;
@@ -50,18 +54,14 @@
   }
 }
 
-.information-town {
+.information__town {
+  display: block;
   font-size: 20px;
   width: 100%;
-  padding-bottom: 20px;
-
-  @media (min-width: @table-width) {
-    padding-bottom: 50px;
-    font-size: 30px;
-  }
+  padding-bottom: 10px;
 }
 
-.information-contant {
+.information__contant {
   text-transform: uppercase;
   font-family: @additional-font;
   width: 100%;
@@ -72,7 +72,7 @@
   }
 }
 
-.information-nav {
+.information__nav {
   width: 80%;
   min-width: 340px;
   display: flex;
@@ -80,17 +80,20 @@
   margin: 0 auto;
 
   @media (min-width: @table-width) {
-    width: 50%;
-    min-width: 400px;
+    width: 400px;
     margin: 0;
   }
 }
 
-.information-button {
+.information__button {
   .button(#FFFFFF, @dark-color);
   padding-left: 10px;
   padding-right: 10px;
   font-size: 15px;
   color: #FFFFFF;
   box-sizing: border-box;
+}
+
+.information__wrapper {
+  .desktop-width-mixin();
 }

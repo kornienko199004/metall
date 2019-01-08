@@ -16,6 +16,11 @@
   justify-content: flex-start;
   align-items: center;
   padding-left: 20px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 45%;
+  }
 }
 
 .feature__wrapper--image {
@@ -23,5 +28,14 @@
   & svg {
     width: 100px;
     fill: @dark-color;
+    transition: width;
+    transition-duration: 0.6s;
+  }
+
+  &:hover {
+    & svg {
+      width: 110px;
+      fill: @button-color;
+    }
   }
 }

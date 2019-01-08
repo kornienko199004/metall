@@ -11,9 +11,21 @@
 .features__list {
   .null-indents-list();
   padding-right: 20px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .features {
   padding-right: 10px;
   padding-left: 10px;
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
 }

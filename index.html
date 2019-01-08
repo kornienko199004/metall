@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Лом металла</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="dist/style.css" rel="stylesheet">
   </head>
+
   <body>
     <button id="toTop">
       <svg><use xlink:href="#cursor"></use></svg>
@@ -55,7 +57,7 @@
             <button class="main-nav__toggle" type="button">
               <div class="main-nav__toggle-image main-nav__toggle-image--close">
                 <svg><use xlink:href="#iconMenuCross"></use></svg>
-              </div>
+              </div>-*//
               <div class="main-nav__toggle-image main-nav__toggle-image--open">
                   <svg><use xlink:href="#iconMenuBurger"></use></svg>
               </div>
@@ -76,12 +78,14 @@
     <main class="page-container">
       <h1 class="visually-hidden">Прием металлолома в Санкт-Петербурге</h1>
       <section class="information">
-        <h2 class="information-title">Прием металлолома</h2>
-        <span class="information-town">В Санкт-Петербурге</span>
-        <p class="information-contant">Вывоз, демонтаж, круглосуточно</p>
-        <div class="information-nav">
-          <button class="information-button button" type="button"><span>Срочный вывоз лома</span></button>
-          <a href="#photo-form" class="information-button button" type="button">Оценка по фото</a>
+        <div class="information__wrapper">
+          <h2 class="information__title">Прием металлолома</h2>
+          <span class="information__town">В Санкт-Петербурге</span>
+          <p class="information__contant">Вывоз, демонтаж, круглосуточно</p>
+          <div class="information__nav">
+            <button class="information__button button demontag-button" type="button"><span>Заказать демонтаж</span></button>
+            <a href="#photo-form" class="information__button button" type="button">Оценка по фото</a>
+          </div>
         </div>
       </section>
       <section class="features">
@@ -127,7 +131,7 @@
                 <use xlink:href="#man"></use>
               </svg>
             </div>
-            <div class="feature__wrapper">
+          <div class="feature__wrapper">
               <h3 class="feature__title feature__title--small">Погрузка бесплатно</h3>
               <p class="feature__about">Свои грузчики</p>
             </div>
@@ -247,105 +251,121 @@
         </div>
       </section>
       <section class="price">
-        <h2 class="price__title">Цены на металлолом</h2>
-        <p class="price__caption">У нас вы получите максимально высокую цену за металлолом.
-          Это объясняется просто: честные весы позволяют рассчитать реальную стоимость за
-          сданный металлолом. Убедитесь в этом сами!</p>
-        <button class="button price__button" type="button">Цены на лом</button>
+        <div class="price__wrapper">
+          <h2 class="price__title">Цены на металлолом</h2>
+          <p class="price__caption">У нас вы получите максимально высокую цену за металлолом.
+            Это объясняется просто: честные весы позволяют рассчитать реальную стоимость за
+            сданный металлолом. Убедитесь в этом сами!</p>
+          <button class="button price__button" type="button">Цены на лом</button>
+        </div>
       </section>
-      <section class="conditions">
-        <h2 class="conditions__title">Условия приема металлолома</h2>
-        <ul class="conditions__list">
-          <li class="conditions__item condition">
-            <section class="condition-card">
-              <div class="condition-card__image">
-                <svg>
-                  <use xlink:href="#creditCard"></use>
-                </svg>
-              </div>
-              <h3 class="condition-card__title">Форма оплаты</h3>
-              <p class="condition-card__caption">наличный расчет на месте или безналичный</p>
-            </section>
-          </li>
-          <li class="conditions__item condition">
-            <section class="condition-card">
-              <div class="condition-card__image">
-                <svg>
-                  <use xlink:href="#lock"></use>
-                </svg>
-              </div>
-              <h3 class="condition-card__title">Конфиденциальность сделки</h3>
-              <p class="condition-card__caption">нам важно доверие клиентов</p>
-            </section>
-          </li>
-          <li class="conditions__item condition">
-            <section class="condition-card">
-              <div class="condition-card__image">
-                <svg>
-                  <use xlink:href="#goodMoney"></use>
-                </svg>
-              </div>
-              <h3 class="condition-card__title">Выгодные цены всегда</h3>
-              <p class="condition-card__caption">возможность приема в порту по высокой цене</p>
-            </section>
-          </li>
-          <li class="conditions__item condition">
-            <section class="condition-card">
-              <div class="condition-card__image">
-                <svg>
-                  <use xlink:href="#photo"></use>
-                </svg>
-              </div>
-              <h3 class="condition-card__title">Возможность оценки по фото</h3>
-              <p class="condition-card__caption">приемщиком до приезда машины</p>
-            </section>
-          </li>
-        </ul>
-      </section>
-      <section class="estimating" id="photo-form">
-        <h2 class="estimating__title">Оценка лома по фото</h2>
-        <p class="estimating__caption">загрузите фото для оценки</p>
-        <form class="estimating__form">
-          <input type="text" class="estimating__input estimating__input--photo" placeholder="Выберете фото">
-          <input type="text" class="estimating__input estimating__input--phone" placeholder="Ваш телефон">
-          <button class="estimating__button button" type="submit">Отправить</button>
-        </form>
-      </section>
+      <div class="page-container__wrapper">
+        <section class="conditions">
+          <h2 class="conditions__title">Условия приема металлолома</h2>
+          <ul class="conditions__list">
+            <li class="conditions__item condition">
+              <section class="condition-card">
+                <div class="condition-card__image">
+                  <svg>
+                    <use xlink:href="#creditCard"></use>
+                  </svg>
+                </div>
+                <h3 class="condition-card__title">Форма оплаты</h3>
+                <p class="condition-card__caption">наличный расчет на месте или безналичный</p>
+              </section>
+            </li>
+            <li class="conditions__item condition">
+              <section class="condition-card">
+                <div class="condition-card__image">
+                  <svg>
+                    <use xlink:href="#lock"></use>
+                  </svg>
+                </div>
+                <h3 class="condition-card__title">Конфиденциальность сделки</h3>
+                <p class="condition-card__caption">нам важно доверие клиентов</p>
+              </section>
+            </li>
+            <li class="conditions__item condition">
+              <section class="condition-card">
+                <div class="condition-card__image">
+                  <svg>
+                    <use xlink:href="#goodMoney"></use>
+                  </svg>
+                </div>
+                <h3 class="condition-card__title">Выгодные цены всегда</h3>
+                <p class="condition-card__caption">возможность приема в порту по высокой цене</p>
+              </section>
+            </li>
+            <li class="conditions__item condition">
+              <section class="condition-card">
+                <div class="condition-card__image">
+                  <svg>
+                    <use xlink:href="#photo"></use>
+                  </svg>
+                </div>
+                <h3 class="condition-card__title">Возможность оценки по фото</h3>
+                <p class="condition-card__caption">приемщиком до приезда машины</p>
+              </section>
+            </li>
+          </ul>
+        </section>
+        <section class="estimating">
+          <div class="estimating__wrapper" id="photo-form">
+            <h2 class="estimating__title">Оценка лома по фото</h2>
+            <p class="estimating__caption">загрузите фото для оценки</p>
+            <form class="estimating__form" action="action/action.php" method="post">
+              <input type="text" class="estimating__input estimating__input--photo" name="photo" placeholder="Выберете фото">
+              <input type="text" class="estimating__input estimating__input--phone" name="phone" placeholder="Ваш телефон">
+              <button class="estimating__button button" type="submit" name="send">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="footer">
-      <div class="footer__logo logo">
-        <p>Демонтаж, прием металла СПб</p>
-      </div>
-      <div class="footer__column">
-        <h4 class="footer__title">Наши услуги</h4>
-        <ul class="footer__list">
-          <li class="footer__link"><a href="#">Прием металлолома</a></li>
-          <li class="footer__link"><a href="#">Вывоз металлолома</a></li>
-          <li class="footer__link"><a href="#">Демонтаж металлоконструкций</a></li>
-          <li class="footer__link"><a href="#">Резка и заготовка</a></li>
-          <li class="footer__link"><a href="#">Аренда спецтехники</a></li>
-        </ul>
-      </div>
-      <div class="footer__column">
-        <h4 class="footer__title">Информация</h4>
-        <ul class="footer__list">
-          <li class="footer__link"><a href="#">О компании</a></li>
-          <li class="footer__link"><a href="#">Контакты</a></li>
-          <li class="footer__link"><a href="#">Скачать прайс-лист</a></li>
-        </ul>
+      <div class="footer__inner">
+        <div class="footer__logo logo">
+          <p class="footer__logo-text">Демонтаж, прием металла СПб</p>
+        </div>
+        <div class="footer__wrapper footer__wrapper--top">
+          <div class="footer__column">
+            <h4 class="footer__title">Наши услуги</h4>
+            <ul class="footer__list">
+              <li class="footer__link"><a href="#">Прием металлолома</a></li>
+              <li class="footer__link"><a href="#">Вывоз металлолома</a></li>
+              <li class="footer__link"><a href="#">Демонтаж металлоконструкций</a></li>
+              <li class="footer__link"><a href="#">Резка и заготовка</a></li>
+              <li class="footer__link"><a href="#">Аренда спецтехники</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__title">Информация</h4>
+            <ul class="footer__list">
+              <li class="footer__link"><a href="#">О компании</a></li>
+              <li class="footer__link"><a href="#">Контакты</a></li>
+              <li class="footer__link"><a href="#">Скачать прайс-лист</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__title">Контакты</h4>
+            <ul class="footer__list">
+              <li class="footer__feedback">7 (965) 080-00-50</li>
+              <li class="footer__feedback">8 (812) 643-33-37</li>
+              <li class="footer__feedback">Metalika78@yandex.ru</li>
+              <li class="footer__feedback"> Работаем 24/7</li>
+              <li class="footer__feedback">Пункты приема в СПБ:</li>
+              <li class="footer__feedback">ул. Двинская, 34</li>
+              <li class="footer__feedback">Митрофаньевское шоссе, 22</li>
+              <li class="footer__feedback">Кубинская, 55</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="footer__column footer__column--feedback">
-        <h4 class="footer__title">Контакты</h4>
-        <ul class="footer__list">
-          <li class="footer__feedback">7 (965) 080-00-50</li>
-          <li class="footer__feedback">8 (812) 643-33-37</li>
-          <li class="footer__feedback">Metalika78@yandex.ru</li>
-          <li class="footer__feedback"> Работаем 24/7</li>
-          <li class="footer__feedback">Пункты приема в СПБ:</li>
-          <li class="footer__feedback">ул. Двинская, 34</li>
-          <li class="footer__feedback">Митрофаньевское шоссе, 22</li>
-          <li class="footer__feedback">Кубинская, 55</li>
-        </ul>
+        <div class="footer__wrapper footer__wrapper--bottom">
+          <p class="footer__feedback">&copy; 2019 Компания  «Техномарт»</p>
+          <p class="footer__feedback">Все права защищены</p>
+        </div>
       </div>
     </footer>
     <section class="modal">

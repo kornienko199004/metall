@@ -1,5 +1,5 @@
 export default () => {
-  const demontagButton = document.querySelector('.demontag-button');
+  const demontagButtons = [...document.querySelectorAll('.demontag-button')];
   const phoneLink = document.querySelector('.phone__link');
   const close = document.querySelector('.modal__close');
   const modal = document.querySelector('.modal');
@@ -11,17 +11,19 @@ export default () => {
     При нажатии на кнопку "Заказать демонтаж"
     открывается модальное окно с заголовком "Заказать демонтаж"
   */
-  demontagButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    title.textContent = 'Заказать демонтаж';
-    if (modal.classList.contains('modal--show')) {
-      modal.classList.remove('modal--show');
-      modalWrapper.classList.remove('modal__wrapper--show');
-    } else {
-      modal.classList.add('modal--show');
-      modalWrapper.classList.add('modal__wrapper--show');
-      userPhone.focus();
-    }
+  demontagButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      title.textContent = 'Заказать демонтаж';
+      if (modal.classList.contains('modal--show')) {
+        modal.classList.remove('modal--show');
+        modalWrapper.classList.remove('modal__wrapper--show');
+      } else {
+        modal.classList.add('modal--show');
+        modalWrapper.classList.add('modal__wrapper--show');
+        userPhone.focus();
+      }
+    });
   });
 
   /*

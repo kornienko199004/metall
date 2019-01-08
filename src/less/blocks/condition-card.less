@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   text-align: center;
   margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
 
 .condition-card__title {
@@ -22,5 +26,15 @@
   & svg {
     width: 100px;
     fill: @dark-color;
+    transition: width;
+    transition-duration: 0.6s;
+  }
+}
+
+
+.condition-card__image:hover {
+  & svg {
+    width: 90px;
+    fill: @button-color;
   }
 }

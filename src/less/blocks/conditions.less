@@ -1,8 +1,37 @@
 .conditions__title {
   .common-title();
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 140px;
+      width: 300px;
+      height: 2px;
+    }
+  }
 }
 
 .conditions {
   .common-padding();
   margin-bottom: 50px;
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+.conditions__list {
+  .null-indents-list();
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.conditions__item {
+  @media (min-width: @desktop-width) {
+    width: 50%;
+  }
 }
