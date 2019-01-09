@@ -100,6 +100,14 @@
   margin-right: 10px;
 }
 
+.page-header__number {
+  font-size: 30px;
+
+  @media (min-width: @table-width) {
+    font-size: 35px;
+  }
+}
+
 .page-header__wrapper--middle.page-header__wrapper--sticky {
   animation-name: showModal;
   animation-duration: 0.6s;
@@ -112,6 +120,7 @@
   background-color: #FFFFFF;
   align-content: center;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+
   @media (min-width: @desktop-width) {
     flex-wrap: nowrap;
   }
@@ -143,7 +152,7 @@
 
   & .page-header__number {
     margin: 0px;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   @media (min-width: @table-width) {

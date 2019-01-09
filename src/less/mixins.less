@@ -37,6 +37,10 @@
 .common-padding() {
   padding-left: 10px;
   padding-right: 10px;
+  @media (max-width: @mobile-and-table-only-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .button(@_color: @button-color, @_font-color: #FFFFFF) {
