@@ -3,6 +3,7 @@ export default () => {
   const phoneLink = document.querySelector('.phone__link');
   const close = document.querySelector('.modal__close');
   const modal = document.querySelector('.modal');
+  const modalForm = modal.querySelector('.modal__form');
   const modalWrapper = document.querySelector('.modal__wrapper');
   const title = document.querySelector('.modal__title');
   const userPhone = document.querySelector("[name='user-phone']");
@@ -21,6 +22,7 @@ export default () => {
       } else {
         modal.classList.add('modal--show');
         modalWrapper.classList.add('modal__wrapper--show');
+        modalForm.action = 'action/demontagAction.php';
         userPhone.focus();
       }
     });
@@ -39,6 +41,7 @@ export default () => {
     } else {
       modal.classList.add('modal--show');
       modalWrapper.classList.add('modal__wrapper--show');
+      modalForm.action = 'action/callBackAction.php';
       userPhone.focus();
     }
   });

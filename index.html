@@ -313,8 +313,12 @@
           <div class="estimating__wrapper" id="photo-form">
             <h2 class="estimating__title">Оценка лома по фото</h2>
             <p class="estimating__caption">загрузите фото для оценки</p>
-            <form class="estimating__form" action="action/action.php" method="post">
-              <input type="text" class="estimating__input estimating__input--photo" name="photo" placeholder="Выберете фото">
+            <form class="estimating__form" action="action/photoAction.php" method="post">
+              <div class="estimating__file-upload file-upload">
+                <div class="file-upload__description">Файл не выбран</div>
+                <button class="file-upload__button" type="button">Выбрать</button>
+                <input type="file" class="file-upload__input" name="photo" accept="image/png, image/jpeg" placeholder="Выберете фото">
+              </div>
               <input type="text" class="estimating__input estimating__input--phone" name="phone" placeholder="Ваш телефон">
               <button class="estimating__button button" type="submit" name="send">Отправить</button>
             </form>
@@ -351,7 +355,7 @@
             <ul class="footer__list">
               <li class="footer__feedback">7 (965) 080-00-50</li>
               <li class="footer__feedback">8 (812) 643-33-37</li>
-              <li class="footer__feedback">Metalika78@yandex.ru</li>
+              <li class="footer__feedback">info@mldm.ru</li>
               <li class="footer__feedback"> Работаем 24/7</li>
               <li class="footer__feedback">Пункты приема в СПБ:</li>
               <li class="footer__feedback">ул. Двинская, 34</li>
@@ -376,8 +380,9 @@
           <svg><use xlink:href="#iconMenuCross"></use></svg>
         </button>
         <p class="modal__caption">Оставьте номер и мы Вам перезвоним</p>
-        <form class="modal__form">
-          <input type="text" class="modal__input modal__input--phone" name="user-phone" placeholder="+7 (999) 999-99-99">
+        <form class="modal__form"  method="post">
+          <input type="text" class="modal__input modal__input--phone" name="name" placeholder="Как к Вам обращаться?">
+          <input type="text" class="modal__input modal__input--phone" name="phone" placeholder="+7 (999) 999-99-99">
           <button class="modal__button button" type="submit">Отправить</button>
         </form>
       </div>

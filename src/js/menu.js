@@ -8,10 +8,8 @@ export default () => {
   }
 
   const toggle = document.querySelector('.main-nav__toggle');
-  console.log(toggle);
 
   toggle.addEventListener('click', (e) => {
-    console.log('click');
     e.preventDefault();
     if (menu.classList.contains('main-nav--closed')) {
       menu.classList.remove('main-nav--closed');
