@@ -1,12 +1,38 @@
 <?php
+require 'class.phpmailer.php';
+require 'class.smtp.php';
 
-$name = htmlspecialchars($_POST['photo']);
-$phone = (int)$_POST['phone'];
+$name = strip_tags($_POST['modal-name']);
+$name = htmlspecialchars($name);
+$name = mysql_escape_string($name);
 
-$to = 'metalldemontag2019@gmail.com';
-$subject = 'Обратный звонок';
-$message = "Пользователь " . $name . ",\n номер телефона " . $phone;
+$number = strip_tags($_POST['modal-phone']);
+$number = htmlspecialchars($number);
+$number = mysql_escape_string($number);
 
-mail($to, $subject, $message);
+// Настройки
+$mail = new PHPMailer;
+$mail->isSMTP();
+$mail->CharSet = 'UTF-8';
+$mail->Host = 'smtp.yandex.ru'; 
+$mail->SMTPAuth = true; 
+$mail->Username = 'kornienko199004'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
+$mail->Password = 'gsmg2404'; // Ваш пароль
+$mail->SMTPSecure = 'ssl'; 
+$mail->Port = 465;
+$mail->setFrom("kornienko199004@yandex.ru"); // Ваш Email
+$mail->addAddress("metalldemontag2019@gmail.com"); // Email получателя
+ 
+// Письмо
+$mail->isHTML(true); 
+$mail->Subject = 'Обратный звонок'; // Заголовок письма
+$mail->Body = "Имя $name . Телефон $number"; // Текст письма
 
-exit('<meta http-equiv="refresh" content="0; url=../" />');
+// Результат
+if(!$mail->send()) {
+ echo 'Message could not be sent.';
+ echo 'Mailer Error: ' . $mail->ErrorInfo;
+} else {
+ echo 'ok';
+ exit('<meta http-equiv="refresh" content="0; url=../" />');
+}

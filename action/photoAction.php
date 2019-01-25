@@ -4,8 +4,12 @@ require 'class.phpmailer.php';
 require 'class.smtp.php';
 
 // Переменные
-$name = htmlspecialchars($_POST['phone-name']);
-$number = htmlspecialchars($_POST['phone']);
+$name = strip_tags($_POST['phone-name']);
+$name = htmlspecialchars($name);
+$name = mysql_escape_string($name);
+$number = strip_tags($_POST['phone']);
+$number = htmlspecialchars($number);
+$number = mysql_escape_string($number);
 
 // Настройки
 $mail = new PHPMailer;

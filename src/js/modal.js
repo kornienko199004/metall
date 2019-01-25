@@ -6,7 +6,7 @@ export default () => {
   const modalForm = modal.querySelector('.modal__form');
   const modalWrapper = document.querySelector('.modal__wrapper');
   const title = document.querySelector('.modal__title');
-  const userPhone = document.querySelector("[name='user-phone']");
+  const userPhone = document.querySelector("[name='modal-phone']");
 
   /*
     При нажатии на кнопку "Заказать демонтаж"

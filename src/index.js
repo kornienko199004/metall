@@ -20,6 +20,7 @@ import iconMenuBurger from '../img/iconMenuBurger.svg';
 import iconMenuCross from '../img/iconMenuCross.svg';
 import clock from '../img/clock.svg';
 import cursor from '../img/cursor.svg';
+import formRequest from './js/formRequest';
 
 menuScript();
 sliderScript();
@@ -28,3 +29,4 @@ anchorsScript();
 scrollToTopScript();
 stickyMenuScript();
 fileUpload();
+formRequest();
