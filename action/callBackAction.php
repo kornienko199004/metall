@@ -32,7 +32,4 @@ $mail->Body = "Имя $name . Телефон $number"; // Текст письм�
 if(!$mail->send()) {
  echo 'Message could not be sent.';
  echo 'Mailer Error: ' . $mail->ErrorInfo;
-} else {
- echo 'ok';
- exit('<meta http-equiv="refresh" content="0; url=../" />');
 }
