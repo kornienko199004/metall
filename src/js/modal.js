@@ -7,6 +7,7 @@ export default () => {
   const modalWrapper = document.querySelector('.modal__wrapper');
   const title = document.querySelector('.modal__title');
   const userPhone = document.querySelector("[name='modal-phone']");
+  const body = document.querySelector('body');
 
   /*
     При нажатии на кнопку "Заказать демонтаж"
@@ -18,10 +19,12 @@ export default () => {
       title.textContent = 'Заказать демонтаж';
       if (modal.classList.contains('modal--show')) {
         modal.classList.remove('modal--show');
+        body.classList.remove('modal--show');
         modalWrapper.classList.remove('modal__wrapper--show');
       } else {
         modal.classList.add('modal--show');
         modalWrapper.classList.add('modal__wrapper--show');
+        body.classList.add('modal--show');
         modalForm.action = 'action/demontagAction.php';
         userPhone.focus();
       }
@@ -37,10 +40,12 @@ export default () => {
     title.textContent = 'Обратный звонок';
     if (modal.classList.contains('modal--show')) {
       modal.classList.remove('modal--show');
+      body.classList.remove('modal--show');
       modalWrapper.classList.remove('modal__wrapper--show');
     } else {
       modal.classList.add('modal--show');
       modalWrapper.classList.add('modal__wrapper--show');
+      body.classList.add('modal--show');
       modalForm.action = 'action/callBackAction.php';
       userPhone.focus();
     }
@@ -67,6 +72,7 @@ export default () => {
       if (modal.classList.contains('modal--show')) {
         modal.classList.remove('modal--show');
         modalWrapper.classList.remove('modal__wrapper--show');
+        body.classList.remove('modal--show');
       }
     }
   });
@@ -80,6 +86,7 @@ export default () => {
       if (modal.classList.contains('modal--show')) {
         modal.classList.remove('modal--show');
         modalWrapper.classList.remove('modal__wrapper--show');
+        body.classList.remove('modal--show');
       }
     }
   });

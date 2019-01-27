@@ -380,12 +380,32 @@
           <span class="visually-hidden">Закрыть</span>
           <svg><use xlink:href="#iconMenuCross"></use></svg>
         </button>
-        <p class="modal__caption">Оставьте номер и мы Вам перезвоним</p>
-        <form class="modal__form"  method="post">
-          <input type="text" class="modal__input modal__input--phone" name="modal-name" placeholder="Как к Вам обращаться?">
-          <input type="text" class="modal__input modal__input--phone" name="modal-phone" placeholder="+7 (999) 999-99-99">
-          <button class="modal__button button" type="submit">Отправить</button>
-        </form>
+        <div class="modal__request-wrapper modal__request-wrapper--form">
+          <p class="modal__caption">Оставьте номер и мы Вам перезвоним</p>
+          <form class="modal__form"  method="post">
+            <input type="text" class="modal__input modal__input--phone" name="modal-name" placeholder="Как к Вам обращаться?">
+            <input type="text" class="modal__input modal__input--phone" name="modal-phone" placeholder="+7 (999) 999-99-99">
+            <button class="modal__button button" type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="modal__request-wrapper modal__request-wrapper--success">
+          <div class="modal__request-image">
+            <svg><use xlink:href="#success"></use></svg>
+          </div>
+          <p class="modal__request-description">
+            <b>Данные успешно отправлены.</b><br/>
+            Наш менеджер свяжется с Вами в ближайшее время.
+          </p>
+        </div>
+        <div class="modal__request-wrapper modal__request-wrapper--failure">
+          <div class="modal__request-image">
+            <svg><use xlink:href="#error"></use></svg>
+          </div>
+          <p class="modal__request-description">
+            <b>При отправке данных произошла ошибка.</b><br/>
+            Попробуйте еще раз или используйте другой способ связи.
+          </p>
+        </div>
       </div>
     </section>
     <script src="dist/main.js"></script>
