@@ -7,6 +7,7 @@ import scrollToTopScript from './js/scrollToTop';
 import stickyMenuScript from './js/stickyMenu';
 import fileUpload from './js/fileUpload';
 import modalFormRequest from './js/modalFormRequest';
+import photoFormRequest from './js/photoFormRequest';
 /* eslint-disable */
 import like from '../img/like.svg';
 import weight from '../img/weight.svg';
@@ -34,3 +35,4 @@ scrollToTopScript();
 stickyMenuScript();
 fileUpload();
 modalFormRequest();
+photoFormRequest();

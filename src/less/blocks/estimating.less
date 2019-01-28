@@ -44,3 +44,25 @@
 .estimating__button {
   width: 100%;
 }
+
+.estimating__request-wrapper--failure,
+.estimating__request-wrapper--success {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & svg {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+.estimating__request-description {
+  width: 100%;
+  text-align: center;
+  font-family: @additional-font;
+}
+
+.estimating__request-wrapper--hidden {
+  display: none;
+}

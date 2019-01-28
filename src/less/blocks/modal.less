@@ -1,6 +1,7 @@
 .modal {
   position: absolute;
   top: -1000px;
+  min-width: 300px;
 }
 
 .modal--show {
@@ -9,18 +10,19 @@
   position: fixed;
   top: 0;
   height: 100%;
-  //background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding-top: 100px;
   z-index: 3;
 
   @media (max-width: @mobile-and-table-only-width) {
     top: -80px;
-    padding-top: 200px;
+    //padding-top: 200px;
   }
 }
 
 .modal__wrapper {
   width: 80%;
+  min-width: 300px;
   position: relative;
   max-width: 450px;
   margin: 0 auto;

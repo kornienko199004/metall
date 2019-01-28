@@ -6,7 +6,7 @@ body {
   font-size: 20px;
   min-width: @min-width;
 
-  & .modal--show {
+  & .show {
     &:before {
       display: block;
       content: "";
@@ -15,11 +15,11 @@ body {
       width: 100%;
       height: 100%;
       //height: 100vh;
-      top: 0;
+      //top: 0;
       //height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       //padding-top: 100px;
-      //z-index: 2;
+      //z-index: 10;
       animation-name: showModal;
       animation-duration: 0.2s;
     }
