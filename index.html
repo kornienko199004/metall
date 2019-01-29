@@ -89,12 +89,11 @@
         </div>
       </section>
       <section class="features">
-        <h2 class="features__title">Ленвтормет - принимаем металлолом с 2005 года</h2>
-        <p class="features__contant">Компания Ленвтормет принимает металлолом с вывозом и бесплатной погрузкой
-          нашими грузчиками, а также профессиональным демонтажом, если он необходим.
-          Собственный автопарк c автотранспортом различной грузоподъемности оборудован
-          весами для точного взвешивания лома. Квалифицированные приемщики, рабочие и
-          грузчики обеспечат удобную сдачу металлолома по адресу в любом районе Санкт-Петербуга.
+        <h2 class="features__title">ООО«ФЕРРУМ»</h2>
+        <p class="features__contant">Приоритетным направлением компании ООО«ФЕРРУМ» является демонтаж
+          металлоконструкций. Выполняем работы любой сложности от простого реза
+          до резки кораблей. Производим подъём кораблей с последующей разделкой.
+          Так же принимаем лом чёрных и цветных металлов.
         </p>
         <p class="features__contant"><b>Чтобы выгодно продать лом металлов</b> любого вида и объема - звоните нам или
           оставьте заявку на оценку. Мы купим черный и цветной промышленный металлолом в любом количестве. 
@@ -121,8 +120,8 @@
               </svg>
             </div>
             <div class="feature__wrapper">
-              <h3 class="feature__title feature__title--small">Работаем 24 часа</h3>
-              <p class="feature__about">Приедем забрать лом от 30 мин.</p>
+              <h3 class="feature__title feature__title--small">Работаем с 9 - до 21 часа</h3>
+              <p class="feature__about">Выезд оценщика в течении часа.</p>
             </div>
           </li>
           <li class="features__item feature">
@@ -318,10 +317,10 @@
                 <div class="estimating__file-upload file-upload">
                   <div class="file-upload__description">Файл не выбран</div>
                   <button class="file-upload__button" type="button">Выбрать</button>
-                  <input type="file" class="file-upload__input" name="userfile[]" multiple placeholder="Выберете фото">
+                  <input type="file" class="file-upload__input" name="userfile[]" multiple placeholder="Выберете фото" required>
                 </div>
-                <input type="text" class="estimating__input estimating__input--phone" name="phone-name" placeholder="Как к Вам обращаться">
-                <input type="text" class="estimating__input estimating__input--phone" name="phone" placeholder="Ваш телефон">
+                <input type="text" class="estimating__input estimating__input--name" name="phone-name" placeholder="Как к Вам обращаться" required>
+                <input type="tel" class="estimating__input estimating__input--phone" name="phone" placeholder="Ваш телефон" required>
                 <button class="estimating__button button" type="submit" name="send">Отправить</button>
               </div>
               <div class="estimating__request-wrapper estimating__request-wrapper--success estimating__request-wrapper--hidden">
@@ -388,7 +387,7 @@
       </div>
       <div class="footer__column footer__column--feedback">
         <div class="footer__wrapper footer__wrapper--bottom">
-          <p class="footer__feedback">&copy; 2019 Компания  «Техномарт»</p>
+          <p class="footer__feedback">&copy; 2019 Компания ООО«ФЕРРУМ»</p>
           <p class="footer__feedback">Все права защищены</p>
         </div>
       </div>
@@ -403,8 +402,8 @@
         <div class="modal__request-wrapper modal__request-wrapper--form">
           <p class="modal__caption">Оставьте номер и мы Вам перезвоним</p>
           <form class="modal__form"  method="post">
-            <input type="text" class="modal__input modal__input--phone" name="modal-name" placeholder="Как к Вам обращаться?">
-            <input type="text" class="modal__input modal__input--phone" name="modal-phone" placeholder="+7 (999) 999-99-99">
+            <input type="text" class="modal__input modal__input--name" name="modal-name" placeholder="Как к Вам обращаться?" required>
+            <input type="tel" class="modal__input modal__input--phone" name="modal-phone" placeholder="+7 (999) 999-99-99" required>
             <button class="modal__button button" type="submit">Отправить</button>
           </form>
         </div>
