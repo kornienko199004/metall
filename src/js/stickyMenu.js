@@ -3,7 +3,7 @@ export default () => {
   const pageHeaderMiddle = document.querySelector('.page-header__wrapper--middle');
   const pageHeaderTop = document.querySelector('.page-header__wrapper--top');
   window.addEventListener('scroll', () => {
-    if (window.pageYOffset >= features.offsetTop) {
+    if (window.pageYOffset >= (features.offsetTop - 140)) {
       if (!pageHeaderMiddle.classList.contains('page-header__wrapper--sticky')) {
         pageHeaderMiddle.classList.add('page-header__wrapper--sticky');
         pageHeaderTop.classList.add('page-header__wrapper--sticky');

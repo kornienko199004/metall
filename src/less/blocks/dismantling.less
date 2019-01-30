@@ -1,4 +1,4 @@
-.price {
+.dismantling {
   display: flex;
   flex-wrap: wrap;
   .common-padding();
@@ -8,11 +8,11 @@
   margin-bottom: 50px;
 }
 
-.price__title {
+.dismantling__title {
   .common-title(@yellow-color, @yellow-color, @dark-color);
 }
 
-.price__caption {
+.dismantling__caption {
   font-family: @additional-font;
   margin-bottom: 50px;
   font-size: 20px;
@@ -20,12 +20,27 @@
   color: @yellow-color;
 }
 
-.price__button {
+.dismantling__button {
   .button(@yellow-color, @dark-color);
   margin: 0 auto;
   color: @yellow-color;
 }
 
-.price__wrapper {
+.dismantling__wrapper {
   .desktop-width-mixin();
+}
+
+.dismantling__slider {
+  .null-indents-list();
+  width: 100%;
+}
+
+.dismantling__image {
+  width: 600px;
+  height: 500px;
+}
+
+.dismantling__slide {
+  height: auto;
+  //overflow: hidden;
 }
