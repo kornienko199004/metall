@@ -8,6 +8,7 @@ import stickyMenuScript from './js/stickyMenu';
 import fileUpload from './js/fileUpload';
 import modalFormRequest from './js/modalFormRequest';
 import photoFormRequest from './js/photoFormRequest';
+import dismantlingSlider from './js/dismantlingSlider';
 /* eslint-disable */
 import like from '../img/like.svg';
 import weight from '../img/weight.svg';
@@ -36,3 +37,4 @@ stickyMenuScript();
 fileUpload();
 modalFormRequest();
 photoFormRequest();
+dismantlingSlider();
