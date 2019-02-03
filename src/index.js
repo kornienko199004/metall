@@ -26,6 +26,10 @@ import clock from '../img/clock.svg';
 import cursor from '../img/cursor.svg';
 import success from '../img/success.svg';
 import error from '../img/error.svg';
+import arrowLeft from '../img/arrowLeft.svg';
+import arrowLeftHover from '../img/arrowLeftHover.svg';
+import arrowRight from '../img/arrowRight.svg';
+import arrowRightHover from '../img/arrowRightHover.svg';
 /* eslint-enable */
 
 menuScript();
