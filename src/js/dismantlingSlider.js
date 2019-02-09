@@ -24,9 +24,20 @@ export default () => {
     children[newCurrentSlideIndex].classList.add(currentSliderClass);
   }
 
+  function setPreviousSliderTheCurrent() {
+    const currentSlideIndex = Array.from(children).reduce((acc, item, index) => (item.classList
+      .contains(currentSliderClass)
+      ? index : acc), '');
+    const newCurrentSlideIndex = currentSlideIndex === 0
+      ? children.length - 1
+      : currentSlideIndex - 1;
+    const currentSlide = document.querySelector(`.${currentSliderClass}`);
+    currentSlide.classList.remove(currentSliderClass);
+    children[newCurrentSlideIndex].classList.add(currentSliderClass);
+  }
 
   Array.from(children).forEach(child => child.addEventListener('click', setCurrentSliderClass));
 
-  previewButton.addEventListener('click', () => console.log('preview'));
+  previewButton.addEventListener('click', setPreviousSliderTheCurrent);
   nextwButton.addEventListener('click', setNextSliderTheCurrent);
 };
