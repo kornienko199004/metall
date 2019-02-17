@@ -3,12 +3,19 @@
   .null-indents();
   .additional-title();
   margin-bottom: 15px;
+
+  @media (max-width: @mobile-and-table-only-width) {
+    font-size: 18px;
+  }
 }
 
 .feature__about {
   .null-indents();
   font-family: @additional-font;
-  font-size: 24px;
+
+  @media (max-width: @mobile-and-table-only-width) {
+    font-size: 18px;
+  }
 }
 
 .feature {
@@ -30,12 +37,20 @@
     fill: @dark-color;
     transition: width;
     transition-duration: 0.6s;
+
+    @media (max-width: @mobile-and-table-only-width) {
+      width: 80px;
+    }
   }
 
   &:hover {
     & svg {
       width: 110px;
       fill: @button-color;
+
+      @media (max-width: @mobile-and-table-only-width) {
+        width: 90px;
+      }
     }
   }
 }
