@@ -40,4 +40,29 @@ export default () => {
 
   previewButton.addEventListener('click', setPreviousSliderTheCurrent);
   nextwButton.addEventListener('click', setNextSliderTheCurrent);
+
+  let initialPoint;
+  let finalPoint;
+  slider.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    [initialPoint] = e.changedTouches;
+  }, false);
+
+  slider.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    [finalPoint] = e.changedTouches;
+    const xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
+    const yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
+    if (xAbs > 20 || yAbs > 20) {
+      if (xAbs > yAbs) {
+        if (finalPoint.pageX < initialPoint.pageX) {
+          setNextSliderTheCurrent();
+        } else {
+          setNextSliderTheCurrent();
+        }
+      }
+    }
+  }, false);
 };
