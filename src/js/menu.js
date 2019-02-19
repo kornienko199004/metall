@@ -25,3 +25,16 @@ export default () => {
     }
   });
 };
+
+/*
+const iframes = document.querySelectorAll('iframe');
+console.log(iframes);
+
+const iframesFuncArray = Array.from(iframes)
+  .map((iframe) => new Promise((resolve, rejects) => {
+    iframe.onload = () => resolve();
+  }));
+
+  Promise.all(iframesFuncArray)
+    .then(() => console.log('finished all'));
+*/
