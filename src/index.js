@@ -42,3 +42,57 @@ fileUpload();
 modalFormRequest();
 photoFormRequest();
 dismantlingSlider();
+
+
+/*
+let arr = [];
+Array.from(buttons).forEach((button) => {
+  const listener = (e) => {
+    console.log(button.textContent);
+    e.target.removeEventListener('click', listener);
+  }
+  arr = [...arr, { fn: listener, element: button }];
+  button.addEventListener('click', listener);
+});
+
+console.log(arr);
+console.log('Start timeout');
+setTimeout(() => {
+  arr
+  .filter((item, index) => index % 2 !== 0)
+  .forEach(({ fn, element }) => {
+    try {
+      element.removeEventListener('click', fn);
+    }
+    catch(e) {
+      console.log(e);
+    }
+  });
+  console.log('Finished timeout');
+}, 3000);
+
+
+let trigger = false;
+
+const someFn = (callback) => {
+  try {
+    if (!trigger) {
+      const element = document.querySelectro('#some6');
+      element.parentNode;
+    }
+    callback();
+  }
+  catch(e) {
+    console.log(e);
+    setTimeout(someFn, 1000, callback);
+  }
+};
+
+someFn(() => {
+  console.log('finished callback');
+});
+
+setTimeout(() => {
+  trigger = true;
+}, 10000);
+*/
